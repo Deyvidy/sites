@@ -1,0 +1,259 @@
+<% include partials/header %>
+   
+        <!-- Start Bnner Section -->
+        <div id="slide-topo" class="banenr type-3 position-relative no-overflows">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="banner-inner flex-column">
+                            
+                            <button class="banner-circle position-relative venobox vbox-item"  data-video-id="326443383">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="20" height="20" viewBox="0 0 20 20" class="svg">
+                                    <defs>
+                                        <style>
+                                        .cls-1 {
+                                            fill: #1447ea;
+                                            fill-rule: evenodd;
+                                        }
+                                        </style>
+                                    </defs>
+                                    <path d="M19.998,9.999 L0.002,0.001 L0.002,19.997 L19.998,9.999 " class="cls-1"></path>
+                                </svg>
+                            </button>
+                            </br>                        
+                            <h2 class="text-white text-uppercase">Dr. Fábio Paschoal</h2>
+                            <p class="text-white text-uppercase text-center">Pneumologia </br> e Apneia do Sono.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bnner Section -->
+    
+        <!-- Start Sobre nós Section -->
+        <section id="sobre" class="medim-into position-relative mt-80 type-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4  doctor-image d-flex align-items-end d-none  justify-content-center">
+                        <img src="images/fabio-paschoal-2.png" width="400" alt="">
+                    </div>
+                    <div class="col-lg-7 col-md-7 m-pb-80">
+                        <p class="text-medium text-dark2 m-0 font-weight-bold">FORMAÇÃO ACADÊMICA / TITULAÇÃO</p>
+                        <p>
+                            <ul style="padding-left: 20px;">
+                            ­	<li>Graduação na Universidade Estadual de Campinas (UNICAMP)</li>
+                            ­	<li>Residência em Clínica Médica e Pneumologia pela Faculdade de Medicina da Universidade de São Paulo (FMUSP)</li>
+                            ­	<li>Especialização em Medicina do Sono, com ênfase em Apneia e Distúrbios Respiratórios do Sono, pelo Instituto do Coração da Faculdade de Medicina da Universidade de São Paulo (InCor/FMUSP)</li>
+                            ­	<li>Títulos de Especialista em Pneumologia pela Sociedade Brasileira de Pneumologia e Tisiologia (SBPT) e Clínica Médica pela Sociedade Brasileira de Clínica Médica (SBCM)</li>
+                            ­	<li>Especialização em Medicina do Sono pela Associação Brasileira do Sono (ABS)</li>
+                            ­	<li>Membro da SBPT e da European Respiratory Society (ERS)</li>
+                            </ul>
+                            
+                        </p>
+
+
+                        <p class="text-medium text-dark2 m-mt-20 mb-0 font-weight-bold">ATUAÇÃO E EXPERIÊNCIA PROFISSIONAL</p>
+                        <p>
+                            <ul style="padding-left: 20px;">
+                                <li>­Médico Preceptor da Disciplina de Pneumologia do Departamento de Cardiopneumologia do Instituto do Coração (InCor)</li>
+                                <li>Corpo Clínico como membro de equipe de Pneumologia e médico assistente da Unidade de Geriatria do Hospital Israelita Albert Einstein</li>
+                                <li>Pneumologista do Centro de Especialidades da Prefeitura Municipal de Paulínia: Pneumologia Geral de Adultos, Apneia e Distúrbios Respiratórios do Sono e Doença Pulmonar Avançada</li>
+                                <li>­Corpo Clínico da Faculdade de Medicina São Leopoldo Mandic</li>
+                            </ul>
+                        </p>
+
+                        <p class="text-medium text-dark2 m-mt-20 mb-3 font-weight-bold">ATIVIDADES REALIZADAS</p>
+                        <p class="  mb-4">
+                            Atendimento ambulatorial de adultos nas áreas de Pneumologia Geral e Distúrbios
+                            Respiratórios do Sono.
+                            <br>
+                            A atualização científica constante é pedra fundamental à vida médica mas deve servir
+                            de pano de fundo a uma consulta clínica feita com empatia, atenção e bom senso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start About Section -->
+    
+        <!-- Start parceiros Section -->
+        <section id="parceiros" class="m-pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                       <div class="pb-40" align="center">
+                            <h2 class="m-0  text-dark">Profissionais Parceiros</h2>
+                            <div class="mini-logo"></div>
+                            <!--<span class="icon-section-wave d-inline-block text-active section-wave mt-3 active"></span>-->
+                       </div>
+                    </div>
+                </div>
+                <div class="row flex-column-reverse flex-md-row  ">
+                    
+                    <div class="col-lg-7 ajustar offset-lg-1 col-md-6 offset-md-1">
+                            <div class="tab-content  doctors-tab" id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-profile<%=doctor[0].id%>" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="doctrs-info-card grad-bg--5 position-relative type-1  radius-10">
+                                        <img src="<%=doctor[0].image.url%>" class="position-absolute" alt="">
+                                        <h4 class="text-white mb-0"><%=doctor[0].title%></h4>
+                                        <p class="text-white designation text-uppercase"><%=doctor[0].speciality%></p>
+                                        <p class="text-white">
+                                            <%=doctor[0].description%>
+                                        </p>
+                                        <a href="<%=doctor[0].website%>" class="btn medim-btn solid-btn mt-4 text-medium radius-pill text-active text-uppercase white-btn bg-transparent position-relative">
+                                            Conhecer
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <% for(var i = 1; i < 4; i++) { %>
+                    
+                                    <div class="tab-pane fade" id="pills-profile<%=doctor[i].id%>" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="doctrs-info-card grad-bg--5 position-relative type-1  radius-10">
+                                            <img src="<%=doctor[i].image.url%>" class="position-absolute" alt="">
+                                            <h4 class="text-white mb-0"><%=doctor[i].title%></h4>
+                                            <p class="text-white designation text-uppercase"><%=doctor[i].speciality%></p>
+                                            <p class="text-white">
+                                                <%=doctor[i].description%>
+                                            </p>
+                                            <a href="<%=doctor[i].website%>" target="_blank" class="btn medim-btn solid-btn mt-4 text-medium radius-pill text-active text-uppercase white-btn bg-transparent position-relative">
+                                                Conhecer
+                                            </a>
+                                        </div>
+                                    </div>
+                                
+                                <% } %>
+                    
+                            </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-5" style="top: -57px;">
+                        <ul class="nav doctors-tab-triger flex-wrap d-flex   mb-0" id="pills-tab" role="tablist">
+                
+                            <% for(var i = 0; i < 4; i++) { %>
+                
+                                <li class="nav-item ">
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile<%=doctor[i].id%>" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                            <img src="<%=doctor[i].photo.url%>" alt="">
+                                        <div>
+                                            <%=doctor[i].title%>
+                                        </div>
+                                    </a>
+                                </li>
+                
+                            <% } %>    
+                
+                        </ul>
+                    </div>   
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="/medicos" class="btn fadeInDown-slide animated no-border bg-transparent medim-btn grad-bg--3 position-relative solid-btn mt-0 text-medium radius-pill text-active text-uppercase text-white p-3">
+                            Ver mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End parceiros Section -->
+
+        <!-- Start duvidas post Section -->
+        <section id="duvidas" class="mt-90  m-pb-0  recent-post-area type-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 ">
+                        <div class="text-center pb-30">
+                            <h2 class="m-0  text-dark">Dúvidas Frequentes</h2>
+                            <div class="mini-logo logo-relative"></div>        
+                            <!--<span class="icon-section-wave d-inline-block text-active section-wave mt-3 active"></span>-->           
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="main-carousel">
+                    <% for(var i = 0; i < blog.length; i++ ) { %>
+                        
+                        <div class="col-md-4 carousel-cell">
+                            <div class="article-box type-1 h-dp-10-60 radius-5">
+                                <% if ( blog[i].image ) { %>
+                                    <img src="<%=blog[i].image.url%>" alt="">
+                                <% } %>
+                                <div class="m-p-30">
+                                    <a  href="/blog#id-<%=blog[i].slug%>">
+                                        <h5 class="text-dark2 mb-3">
+                                            <%=blog[i].title%>
+                                        </h5>
+                                    </a>
+                                    <a href="/blog#id-<%=blog[i].slug%>" class="text-default fz-poppins text-Underline">
+                                        Ler Mais
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                        
+
+                    <% } %>
+                </div>
+                <br>                
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="/blog" class="btn fadeInDown-slide animated no-border bg-transparent medim-btn grad-bg--3 position-relative solid-btn mt-0 text-medium radius-pill text-active text-uppercase text-white p-3">
+                            Ver mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End duvidas post Section -->
+    <!--
+        <section id="contato" class="m-pt-50  position-relative set-bg" style="background-image: url(&quot;images/bg-img1.jpg&quot;); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="overlay op-P9"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                       <div class="text-center pb-40" align="center">
+                            <h2 class="m-0  text-white ">Envie suas dúvidas</h2>
+                            <div class="mini-logo-branco logo-relative"></div>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 perspective--400">
+                        <div id="footer-bg" class="appoint-card radius-20 bg-white  position-relative m-pt-40 m-pb-40 s-10-80">
+                            <form id="formulario" >
+                                <div class="row">                                
+                                    <div class="col-lg-7 offset-lg-5  col-md-9 offset-md-3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input id="name-contato" type="text" placeholder="Nome:" name="name" class="form-control medim-field fz-poppins m-mb-20">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input id="email-contato" type="text" class="form-control m-mb-20" placeholder="Email:" name="email">
+                                            </div>                                                                             
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <textarea id="message-contato" name="message" class="form-control fz-poppins medim-field" data-box-name="contact-message" placeholder="Mensagem:" style="margin-top: 0px; margin-bottom: 0px; height: 150px;"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-6">
+                                                <button type="submit" class="btn fadeInDown-slide animated no-border bg-transparent medim-btn grad-bg--3 solid-btn text-medium radius-pill text-active text-uppercase text-white" id="btn-contato">
+                                                    enviar mensagem
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                        -->
+                        <!-- appoint-card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<% include partials/footer %>

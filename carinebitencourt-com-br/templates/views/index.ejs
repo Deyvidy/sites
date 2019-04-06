@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Carine Bitencourt</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="compile/bootstrap.css">
+        <link rel="stylesheet" href="compile/style.css">
+        
+        <!--Flick lib de carrousel-->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="js/slick-master/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="js/slick-master/slick/slick-theme.css"/>
+
+
+	</head>
+	<body>
+	
+        <div class="container-fluid" id="slide">
+            <div class="container mb-5" id="topo">
+                <div class="row">
+                    <div id="menu" class="col-md-4">
+                        <div class="idioma"></div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="align-content-center" href="#" id="logo"></a>  
+                    </div>
+
+                    <div class="col-md-4" id="redes-sociais">
+                        <ul class="float-right">
+                        <li>
+                            <a href="https://www.instagram.com/carinebitencourt/" target="_blank" class="instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/cgbitencourt/" target="_blank" class="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://whatsfacil.com/e91c6d" target="_blank" class="whatsapp"></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/cgbitencourt" target="_blank" class="telegram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/Carine_Bitencourt" target="_blank" class="behance"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/carine-bitencourt-275648121/" target="_blank" class="linkedin"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div id="cabecalho-container" class="container">
+
+                <img class="img-fluid cloud" src="images/cloud.svg">
+                <img class="img-fluid love" src="images/love.svg">
+                <img class="img-fluid happy" src="images/happy.svg">          
+            
+                <!--Inicio do carousel do cabeçalho -->            
+                <div class="header-carousel">
+
+                    <% headers.forEach(function (header){   %>
+                        <div class="container container-projetos">
+
+                            <div class="row">
+
+                                <div class="col-md-6 align-items-center justify-content-md-center">
+
+                                    <div class="col-md-auto">
+                                        <p class="row"><%=header.name%></p>
+                                    </div>
+                                    
+                                    <div class="col-md-auto">
+                                        <small class="row"><%=header.subTitulo%></small>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                        <button class="" id="projetos">VEJA O PROJETO COMPLETO</button>
+                                    </div>                                            
+        
+                                </div>
+        
+                                <div class="col-md-6 align-self-center">
+    
+                                    <div id="slide-cabecalho" class="col-md-auto">
+                                        
+                                        <% header.image.forEach(function(image){  %>
+                                            <img src="<%=image.url%>" alt="" class="img-fluid">
+                                        <% }) %>
+                                        
+                                    </div>
+    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    <% }) %>
+                    
+                </div>
+                <!--Fim do carousel do cabeçalho -->   
+
+            </div>
+
+        </div>
+        
+        <!--Inicio O que eu faço-->
+        <div class="container-fluid my-5">
+
+            <div class="about-me row justify-content-center align-content-center">
+
+                <div class="col-md-4 align-self-center">                        
+                    <img class="mt-3 img-fluid" src="images/icon/ICONES/like.svg">
+                    <p class="mt-3">O que eu faço</p> 
+                    <br>
+                </div>
+               
+                <div class="col-md-8 align-self-center">
+
+                    <div class="container client-slide">
+                            <% products.forEach( function(products){  %>                     
+
+                                <div class="card col-md">
+                                    <div class="row justify-content-center align-content-center">
+                                        <% products.image.forEach( function(image) { %>
+                                            <img class="card-img" src="<%=image.url%>" alt="Imagem de capa do card">                                  
+                                        <% }) %>
+                                    </div>
+                                    <div class="card-body row justify-content-center align-content-center text-center">
+                                        <p class="produto"><%=products.subtitle%></p>
+                                    </div>
+                                </div>
+    
+                            <% }) %>    
+                    </div>         
+               
+                </div> 
+
+            </div>
+
+        </div>
+        <!--Fim o que eu faço-->
+   
+        <!--Inicio de Jobs-->
+        <div class="container-fluid pb-5 jobs">
+
+            <div class="row justify-content-center pt-5 mb-2">
+                <img class="img-fluid" src="images/icon-hashtag.svg">
+                <p class="mt-2 ml-2"> Jobs</p>
+            </div>
+
+        
+            <ul class="nav row justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="todos-tab" data-toggle="tab" href="#todos" role="tab" aria-controls="todos" aria-selected="true">TODOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">WEB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="impressos-tab" data-toggle="tab" href="#impressos" role="tab" aria-controls="impressos" aria-selected="false">IMPRESSOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logotipo-tab" data-toggle="tab" href="#logotipo" role="tab" aria-controls="logotipo" aria-selected="false">LOGOTIPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="midiasSociais-tab" data-toggle="tab" href="#midiasSociais" role="tab" aria-controls="midiasSociais" aria-selected="false">MÍDIAS SOCIAIS</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content mb-4 publicidade d-flex justify-content-center align-content-center flex-wrap" align="center" id="myTabContent">
+                <!--Todos inicio-->
+
+                    <div class="tab-pane fade show active row" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+                        <div id="todoss" class="row justify-content-center align-content-center mt-4"></div>
+                        
+                    </div>                     
+
+                <!--Todos fim-->  
+
+                <!--Web inicio-->
+
+                    <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+
+                        <div id="webss" class="row justify-content-center align-content-center mt-4"></div>
+                        
+                    </div> 
+                    
+                <!--Web fim-->
+
+                <!--impressos inicio-->
+                
+                    <div class="tab-pane fade" id="impressos" role="tabpanel" aria-labelledby="impressos-tab">
+                        
+                        <div id="impressoss" class="row justify-content-center align-content-center mt-4"></div>
+
+                    </div>    
+                    
+                <!--impressos fim-->            
+
+                <!--logotipo inicio-->
+
+                    <div class="tab-pane fade" id="logotipo" role="tabpanel" aria-labelledby="logotipo-tab">
+
+                        <div id="logotiposs" class="row justify-content-center align-content-center mt-4"></div>
+
+                    </div>   
+                    
+                <!--logotipo fim-->
+
+                <!--midia social inicio-->
+                
+                    <div class="tab-pane fade" id="midiasSociais" role="tabpanel" aria-labelledby="midiasSociais-tab">
+                        
+                        <div id="midiasSociaiss" class="row justify-content-center align-content-center mt-4"></div>
+                
+                    </div>
+
+                <!--midia social fim-->
+
+            </div>
+
+            <div class="d-flex justify-content-center align-content-center mt-5 row">
+                <button id="carregarMaisTodos"type="button" class="btn-carregar">Carregar mais</button>
+            </div>
+
+            <!--Modal inicio-->
+
+            <% jobs.forEach( function( jobs ) { %>
+
+                <div id="<%=jobs.name%>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="modal-content">
+                            <div class="modal-body d-flex justify-content-center align-content-center">
+
+                                <% jobs.modalImage.forEach( function ( modal ) { %>
+
+                                    <img class="img-fluid" src="<%=modal.url%>" alt=""/>
+
+                                <% }) %>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <% }) %>
+
+            <!--Modal fim-->
+    
+        </div>
+        <!--fim de Jobs-->
+
+        <!--Incio clientes-->
+        <div class="container clients  py-5">
+            <div class="row justify-content-center align-items-center">
+                <p class="tracos">--</p> <p class="cliente mx-2"> clientes </p> <p class="tracos">--</p>
+            </div> 
+
+            <div class="container main-carousel">
+                <% clients.forEach( function(client) { %>
+                    <% client.images.forEach( function( image ) { %>
+                        <div class="carousel-cell"><img src="<%=image.url%>" style="width: 200px; height: 100px; margin-left: 20px !important;"></div>
+                    <% }) %>
+                <% }) %>
+            </div>            
+
+        </div>
+        <!--Fim clientes-->
+        
+        <!--Incio depoimentos-->
+        <div class="container-fluid feedback pb-5">
+
+            <div class="row justify-content-center align-content-center flex-column text-center my-5">
+                <img class="img-fluid" src="images/icon-heart-dep.svg">
+                <h1 class="mt-4">depoimentos</h1> 
+
+                <div class="caixa_corte img-fluid">
+                    <img src="images/icon-chat.svg">
+                </div>
+            </div>   
+
+            <div class="row justify-content-center">   
+        
+                <div class="slider feedback-carousel ajustar">     
+
+                    <% feedbacks.forEach( function ( feedback ){ %>
+                        
+                        <div class="slide">
+                            
+                            <div class="tamanho bg-chats">
+                                <% feedback.images.forEach( function ( image) { %>
+                                    <div class="imagem-depoimento" style="background-image: url(<%=image.url%>);"></div>
+                                <% }) %>
+
+                                <div class="texto-depoimentos">
+                                    <div class="card-body col align-self-center">
+                                        <div class="aspas"></div>
+                                        <p class="card-text"><%=feedback.content%></p>
+                                    </div>
+                                    <small class="text-center">
+                                        <%=feedback.name%>
+                                    </small>
+                                </div>
+        
+                            </div>
+
+
+                        </div>
+
+                    <% }) %>
+                    
+                </div>                            
+
+            </div>
+        </div>
+        <!--Fim depoimentos-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/slick-master/slick/slick.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/carrossel.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>    
+        
+
+    <!-- Footer -->
+    <footer class="w-100 d-flex justify-content-center align-items-center flex-column">
+                
+        <div class="mais w-100 d-flex justify-content-center align-items-center">
+
+            <ul class="w-75 d-flex justify-content-center align-items-center">
+                <li>
+
+                </li>                
+            </ul>
+
+        </div>
+       
+        <!-- Footer Elements -->
+        <div class="social-footer w-100  d-flex justify-content-center align-items-center flex-column">
+    
+            <!-- Social buttons -->
+            <ul class="d-flex align-items-center">
+                <li class="ml-1">
+                    <a class="social-network"><img src="images/instagram.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-tw mx-1"><img src="images/facebook.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-gplus mx-1"><img src="images/whatsapp.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-li mx-1"><img src="images/telegram.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-dribbble mx-1"><img src="images/behance.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-dribbble mx-1"><img src="images/linkedin.svg"></a>
+                </li>
+            </ul>
+            <!-- Social buttons -->        
+
+            <div class="text-center pt-2">
+                <a href="https://mdbootstrap.com/education/bootstrap/">Todos os direitos reservados</a>
+            </div>
+
+        </div>
+        
+        <!-- Footer Elements -->
+    
+    </footer>
+    <!-- Footer -->
+	 </body>
+ </html>
+ 

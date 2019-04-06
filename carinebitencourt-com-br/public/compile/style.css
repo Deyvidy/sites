@@ -1,0 +1,57 @@
+/*# sourceMappingURL=style.css.map */
+#logo {
+	background-image: url("../images/carine-bitencourt.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 218px;
+	height: 132px;
+	display: block;	
+	margin: auto;
+	margin-top: 55px;
+}
+
+#slide {
+	background-color: #0D1D3E;
+}
+
+#redes-sociais {
+	margin-top: 75px;
+}
+
+#redes-sociais ul li {
+	list-style: none;
+	float: left;
+	margin: 0 8px;
+}
+
+#redes-sociais ul li a {
+	display: block;
+	width: 27px;
+	height: 27px;
+}
+
+.instagram {
+	background: url(../images/instagram.svg) no-repeat;
+}
+
+.facebook {
+	background: url(../images/facebook.svg) no-repeat;
+	width: 16px !important;
+}
+
+.whatsapp {
+	background: url(../images/whatsapp.svg) no-repeat;
+}
+
+.telegram {
+	background: url(../images/telegram.svg) no-repeat;
+	width: 36px !important;
+}
+
+.behance {
+	background: url(../images/behance.svg) no-repeat;
+}
+
+.linkedin {
+	background: url(../images/linkedin.svg) no-repeat;
+}

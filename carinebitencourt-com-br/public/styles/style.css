@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.modal {
+    background-color: black;
+}
+.modal-dialog{
+    background-color: black;
+    max-width: 100% !important; 
+}
+
+.modal-body {
+    background-color: black;
+    width: 100% !important; 
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style-type: none;
+}
+
+/* header carousel*/
+#cabecalho-container{
+    position: relative;
+}
+
+.header-carousel {
+    height: auto !important;
+}
+
+.header-carousel .flickity-page-dots{  
+    list-style-type:none !important;
+    text-align:center;
+    position: absolute;    
+    left: 100%;    
+    top: 25%;   
+    width: 27px;
+}
+
+
+.flickity-page-dots .dot {
+    width: 14px !important;
+    height: 14px !important;  
+    background: #FFFFFF !important;
+    opacity: 1 !important;
+    margin: 2px !important;
+}
+
+.dot.is-selected{
+    background: url(../images/bullet-active.svg) !important;
+    background-size: cover !important;  
+}
+
+
+.header-carousel img {
+    width: 84% !important;
+}
+
+.container-projetos{    
+    padding-bottom: 10%;
+}
+
+.container-projetos div p {
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: 800;    
+    margin: 0px;
+}
+
+.container-projetos div small{
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+#projetos {
+    margin-top: 20px;
+    width: 240px;
+    height: 66px !important;
+    background-color: #FFCD00;
+    border: 0px;
+    font-size: 12px;
+}
+
+
+/**/
+.about-me{   
+    height: auto;
+    margin: 0 4% 0 4% !important; 
+    background-color: #FFFFFF;
+    margin: 0px;
+}
+
+.about-me .card {
+    width:  30% !important;
+    margin: 2%;
+    height: auto !important;
+    /*background-color: #d7d7d7;*/
+}
+
+
+
+.card img {
+    width: 98% !important; 
+    height: 220px !important;
+    margin: 10px;
+}
+
+
+.card .card-body p {
+    font-size: 30px !important;
+    color: #5D93EE;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 10px !important;
+}
+
+.about-me div p {
+    font-size: 48px;
+    color: #2770ED;
+    font-weight: 200;
+}
+
+.about-me div img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.btn-carregar {
+    border: none;
+    background-color: #0D1D3E;
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+}
+
+.btn-carregar:hover {
+    background-color: #0D1D3E;
+    color: #FFFFFF;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.your-class div div p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5D93EE;
+}
+
+/*      Animacoes     */
+
+.cloud{
+    position: absolute;    
+    top: -15%;
+    left: -5%;
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+
+.love{
+    position: absolute;    
+    left: -10%;
+    top: 40%;
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+.happy {
+    position: absolute;    
+    top: 30%;
+    left: 35%;
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    0%   {transform: scale(.6);}
+    100% {transform: scale(0.8);}
+}
+
+/*        Jobs        */
+
+#todoss {    
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.jobs{
+    height: auto;
+    background-color: #FAF8F8;  
+}
+
+.jobs div svg {
+    margin-top: 25px !important;
+}
+
+.jobs div p {
+    font-size: 84px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    color: #2770ED;    
+    margin-bottom: 8px;
+}
+
+.jobs ul li a {
+    font-size: 19px;
+    color: #FA3B64;
+}
+
+.publicidade img {
+    width: 250px;
+    height: 178px;
+}
+
+
+/*               clientes                         */
+.clients{
+    height: auto;
+    background-color: #FFFFFF;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tracos {
+    color: #FA3B64;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.cliente {
+    color: #2770ED;
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.bla-bla {
+    background-color: #DCDCDC;
+    color: #DCDCDC;
+    widows: 100px !important;
+    height: 50px;
+}
+
+/*    feedback       */
+
+.feedback{
+    height: auto;
+    background-color: #FFFFFF;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.feedback div h1 {
+    font-size: 60px;
+    font-weight: 200;
+    color: #2770ED;
+}
+
+.depoimentos .card-text{
+    color: #7C7C7C;
+    font-size: 10px;
+}
+
+.depoimentos footer small {
+    color: #2770ED;
+}
+
+.caixa_corte {
+    width: 200px;
+    height: 320px;
+    position: absolute;   
+    right: 0.1%;
+    overflow:hidden;
+}
+
+.caixa_corte img {
+    width: 280px;
+    height: 280px;
+}
+
+/*Balao de depoimentos*/
+
+.tamanho{
+    width: 350px !important;
+    height: 350px !important;
+}
+
+.imagem-depoimento{
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 112.5px;
+    top: -40px;
+    /*background-image: url(../images/profile.jpg);*/
+    border-radius: 100%;
+    background-size:  cover;
+}
+
+.aspas{
+    width: 20px;
+    height: 16px;
+    background: url(../images/aspas.svg);
+    background-size: cover;
+    background-position: bottom;
+    
+    margin: 25% 0 10px 10%;
+}
+
+.bg-chats {
+    background: url(../images/bg-chat.svg) no-repeat;
+    position: relative;
+    background-size: cover;
+    padding: 30px 30px 0 50px;     
+}
+
+.bg-chats small{
+    padding: 0 100px 0 35px; 
+    font-size: 10px;
+    font-style: italic;
+    color: #2770ED;
+}
+
+.card-body{    
+    padding-bottom: 0;
+}
+
+.card-body p {
+    font-size: 12px;
+    color: #7C7C7C;
+    font-family: 'Poppins', sans-serif; 
+} 
+
+.card-text{ 
+    /*padding-top: 10%;   */
+    padding-left: 25px;
+    padding-right: 10px;
+}      
+
+
+/*carrousel depoimentos*/
+
+
+.feedback-carousel .slide {
+    transform: scale(0.6);
+}
+
+.feedback-carousel .is-selected {
+    transform: scale(0.8);
+}
+
+.feedback-carousel {
+    width: 75% !important;
+}
+
+.slide {
+    width:350px;
+}
+
+
+
+
+
+/*             Footer                  */
+
+.mais{
+    height: 20px;
+    background-color: #0D1D3E;
+}
+
+
+.mais ul li p{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+
+.social-footer {
+    height: 100px;
+    background-color: #FA3B64;
+}
+
+
+.social-footer ul li a image{
+    width: 38px;
+    height: 38px;
+    background-color: #FA3B64;
+}
+
+.text-center a {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+/* Mobile */
+
+@media(max-width: 1300px) {
+
+    /* backgraund do balao no campo depoimentos */
+
+    .caixa_corte{
+        right: 0.1%;
+        width: 140px;
+        height: 270px;
+    }
+
+    .caixa_corte img {
+        width: 194px;
+        height: 194px;
+    }
+
+    .your-class {        
+        height: 350px;        
+        bottom: 25%;
+    }
+
+    .about-me .ml-3 img{
+        margin-top: 0 !important;
+    }
+    
+    .about-me .ml-3 {
+        margin-top: 0 !important;
+        padding-top: 5% !important;        
+        margin-bottom: 5%;
+
+    }
+
+    .cloud{        
+        top: -15%;
+        left: -5%;
+    }
+   
+    .happy{        
+        top: 30%;
+        left: 35%;
+    }
+
+    .love{
+        left: -10%;
+        top: 40%;
+    }
+    
+}
+
+@media (max-width: 992px) {  
+    .about-me .card {
+        width:  50% !important;
+        margin: 2%;
+        height: auto !important;
+    }   
+    
+   /* backgraund do balao no campo depoimentos */
+    .caixa_corte{
+        right: 0.1%;    
+        width: 140px;
+        height: 270px;
+    }
+
+    .caixa_corte img {
+        width: 174px;
+        height: 174px;
+    }   
+}
+
+
+@media (max-width: 768px) {
+
+    .about-me .card {
+        width:  100% !important;
+        margin: 2%;
+        height: auto !important;
+    }   
+    
+     /* Logo no cabeçalho*/
+    #logo {
+        margin-top: 30px !important;
+    }
+
+    /* redes sociais no cabeçalho*/
+    #redes-sociais {
+        visibility: hidden;        
+        margin-top: 0px !important;
+    }
+
+    /* carrousel do cabeçalho */
+    #slide-cabecalho {        
+        margin-top: 10%;
+    }
+
+    .header-carousel .flickity-page-dots {
+        visibility: hidden;
+        left: 50%;;
+    }
+
+    #projetos {
+        width: 200px;
+        height: 50px !important;
+    }
+
+    #topo {        
+        margin-bottom: 0px !important;
+    }
+   
+    .container-projetos p {
+        font-size: 40px !important;        
+        width: 300px;
+    }
+
+    .container-projetos small {
+        font-size: 18px !important;
+    }
+    
+    .cloud {
+        visibility: hidden;
+    }
+
+    .happy{
+        visibility: hidden;
+    }
+
+    .love{
+        visibility: hidden;
+    }
+
+    .clients img {        
+        width: 400px !important;
+    }
+
+    .feedback .my-5 {       
+        margin-bottom: 0px !important;
+    }
+    
+    .publicidade img{        
+        width: 200px;
+        height: 128px;
+    }
+
+    .jobs p {
+        font-size: 48px !important;
+    }
+
+    .about-me div p{
+        font-size: 36px !important;
+    }
+
+    .feedback h1 {
+        font-size: 36px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+      /* Clientes */
+    .cliente {
+        font-size: 48px;
+    }
+
+    .clients img {        
+        width: 400px !important;
+    }
+
+    /* Depoimentos */
+    .feedback .my-5 {       
+        margin-bottom: 0px !important;
+    }
+
+    /* Trabalhos */
+    .publicidade img{        
+        width: 200px;
+        height: 128px;
+    }
+
+
+}

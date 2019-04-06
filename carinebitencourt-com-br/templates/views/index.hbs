@@ -1,0 +1,369 @@
+{{!< default}}
+
+        <div id="slide">
+            <div class="container" id="topo">
+                <div class="row">
+                    <div id="menu" class="col-4">
+                        <div class="idioma"></div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a class="align-content-center" href="#" id="logo"></a>  
+                    </div>
+
+                    <div class="col-4" id="redes-sociais">
+                        <ul class="float-right">
+                        <li>
+                            <a href="https://www.instagram.com/carinebitencourt/" target="_blank" class="instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/cgbitencourt/" target="_blank" class="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://whatsfacil.com/e91c6d" target="_blank" class="whatsapp"></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/cgbitencourt" target="_blank" class="telegram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/Carine_Bitencourt" target="_blank" class="behance"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/carine-bitencourt-275648121/" target="_blank" class="linkedin"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="container">
+
+                <div class="cloud"></div>
+                <div class="love"></div>
+                <div class="happy"></div>            
+            
+                <div class="slide-carousel header-carousel mt-5">
+
+                    {{#each headers}}
+                        <div class="container container-projetos">
+                                <div class="row align-items-center">
+
+                                    <div class="col">
+                                        <p class="row">{{name}}</p>
+                                        <small class="row">{{subTitulo}}</small>
+                                        <button id="projetos">VEJA O PROJETO COMPLETO</button>
+                                    </div>
+
+                                    <div class="col">
+                                        {{#each image}}
+                                            <img src="{{cloudinaryUrl}}" alt="" class="img-fluid d-block">
+                                        {{/each}}
+                                    </div>
+
+                                </div>
+                        </div>
+                    {{/each}}
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="container-fluid my-5 ">
+
+
+            <!--Inico o que eu faço-->
+            <div class="about-me d-flex justify-content-center align-content-center flex-wrap">
+
+                <div class="ml-3 mr-2 pt-5 "> 
+                       
+                    <img class="mt-5" src="images/icon/ICONES/like.svg">
+                    <p class="mt-3">O que eu faço</p>                          
+
+                </div>
+                
+
+                <div class="w-70">
+
+                    <div class="your-class">
+                        {{#each products}}                        
+
+                            <div class="card-servicos">
+                                <div class="d-flex justify-content-center align-content-center">
+                                    {{#each image}}
+                                        <img class="img-servicos" src="{{cloudinaryUrl}}"  style="width: 180px; height: 150px;" alt="Imagem de capa do card">
+                                    {{/each}}
+                                </div>
+                                <div class="card-body d-flex justify-content-center align-content-center text-center">
+                                    <p class="produto">{{subtitle}}</p>
+                                </div>
+                            </div>
+
+                        {{/each}}
+                        
+                    </div>
+
+                </div>                    
+                   
+
+            </div>
+        
+        </div>
+        <!--Fim o que eu faço-->
+   
+
+        <div class="w-100 pb-5 jobs">
+
+            <div class="d-flex justify-content-center pt-5 mb-2">
+                <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="78.277" height="78.278" viewBox="0 0 68.277 68.278">
+                    <path id="_005-hashtag" data-name="005-hashtag" d="M51.275,35.963H45.566a.412.412,0,0,1-.411-.411v-15.9a.412.412,0,0,1,.411-.411h5.709a4.473,4.473,0,0,0,3.269-1.415,4.27,4.27,0,0,0,1.143-3.254,4.363,4.363,0,0,0-4.336-4.027H45.566a.412.412,0,0,1-.411-.411V4.425a4.467,4.467,0,0,0-1.416-3.269A4.266,4.266,0,0,0,40.485.012a4.364,4.364,0,0,0-4.027,4.336V10.13a.412.412,0,0,1-.411.411h-15.9a.412.412,0,0,1-.411-.411V4.425a4.471,4.471,0,0,0-1.415-3.269A4.269,4.269,0,0,0,15.063.012a4.364,4.364,0,0,0-4.026,4.336V10.13a.412.412,0,0,1-.412.411h-5.7a4.471,4.471,0,0,0-3.269,1.415A4.27,4.27,0,0,0,.512,15.211a4.364,4.364,0,0,0,4.336,4.027h5.777a.412.412,0,0,1,.412.411v15.9a.412.412,0,0,1-.412.411h-5.7a4.472,4.472,0,0,0-3.269,1.416A4.269,4.269,0,0,0,.512,40.633a4.364,4.364,0,0,0,4.336,4.026h5.777a.412.412,0,0,1,.412.411v5.7a4.475,4.475,0,0,0,1.415,3.27,4.275,4.275,0,0,0,3.254,1.143,4.365,4.365,0,0,0,4.026-4.337V45.071a.412.412,0,0,1,.411-.411h15.9a.412.412,0,0,1,.411.411v5.7a4.474,4.474,0,0,0,1.416,3.27A4.27,4.27,0,0,0,40.8,55.2c.108,0,.217,0,.327-.012a4.365,4.365,0,0,0,4.027-4.337V45.071a.412.412,0,0,1,.411-.411h5.785a4.363,4.363,0,0,0,4.336-4.026,4.27,4.27,0,0,0-1.143-3.254,4.474,4.474,0,0,0-3.269-1.416Zm-14.817-.411a.412.412,0,0,1-.411.411h-15.9a.412.412,0,0,1-.411-.411v-15.9a.412.412,0,0,1,.411-.411h15.9a.412.412,0,0,1,.411.411Zm0,0" transform="translate(-0.48 15.353) rotate(-16)" fill="#fa3b64"/>
+                </svg>
+                <p class="mt-2 ml-2"> Jobs</p>
+            </div>
+
+        
+            <ul class="nav d-flex justify-content-center pt-1 mb-2" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="todos-tab" data-toggle="tab" href="#todos" role="tab" aria-controls="todos" aria-selected="true">TODOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">WEB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="impressos-tab" data-toggle="tab" href="#impressos" role="tab" aria-controls="impressos" aria-selected="false">IMPRESSOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logotipo-tab" data-toggle="tab" href="#logotipo" role="tab" aria-controls="logotipo" aria-selected="false">LOGOTIPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="midiasSociais-tab" data-toggle="tab" href="#midiasSociais" role="tab" aria-controls="midiasSociais" aria-selected="false">MÍDIAS SOCIAIS</a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content mb-4 publicidade d-flex justify-content-center align-content-center flex-wrap" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+
+                    {{#each jobs}}
+
+                        <a href="#" class="thumbnail" data-toggle="modal" data-target="#{{name}}"> 
+
+                            {{#each image}}
+                                <img class="my-3 mx-3"src="{{cloudinaryUrl}}">
+                            {{/each}}
+
+                        </a>
+
+                    {{/each}}
+
+                </div>
+                <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+
+                    {{#each jobs}}
+                    <script>
+                        var teste = true;
+                    </script>
+
+                    {{#if teste}}
+
+                            <a href="#" class="thumbnail" data-toggle="modal" data-target="#{{name}}"> 
+
+                                {{#each image}}
+                                    <img class="my-3 mx-3"src="{{cloudinaryUrl}}">
+                                {{/each}}
+
+                            </a>
+                    {{/if}}
+                        
+
+                    {{/each}}
+                            
+
+                </div>
+                <div class="tab-pane fade" id="impressos" role="tabpanel" aria-labelledby="impressos-tab">
+                    
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+                    <img class="my-3 mx-3"src="images/Sem nome.png">                
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+
+                </div>
+                <div class="tab-pane fade" id="logotipo" role="tabpanel" aria-labelledby="logotipo-tab">
+
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+                    <img class="my-3 mx-3"src="images/Sem nome.png"> 
+
+                </div>
+                <div class="tab-pane fade" id="midiasSociais" role="tabpanel" aria-labelledby="midiasSociais-tab">
+
+                    <img class="my-3 mx-3"src="images/Sem nome.png">
+                    <img class="my-3 mx-3"src="images/Sem nome.png"> 
+
+                </div>
+
+
+            </div>
+
+
+            <div class="d-flex justify-content-center align-content-center mt-5">
+                <button type="button" class="btn-carregar">Carregar mais</button>
+            </div>
+
+            <!--Modal inicio-->
+
+            {{#each jobs}}
+
+                <div id="{{name}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="modal-content">
+                            <div class="modal-body d-flex justify-content-center align-content-center">
+
+                                {{#each modalImage}}
+
+                                    <img src="{{cloudinaryUrl}}" alt=""/>
+
+                                {{/each}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {{/each}}
+
+            <!--Modal fim-->
+    
+        </div>
+
+        <div class="w-100 clients  py-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="tracos">--</p> <p class="cliente mx-2"> clientes </p> <p class="tracos">--</p>
+            </div> 
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="w-75 cliente-carousel">
+
+                    {{#each clients}}
+                        {{#each images}}
+                            <div><img src="{{cloudinaryUrl}}" style="width: 100px; height: 50px; margin-left: 20px !important;"></div>
+                        {{/each}}
+                    {{/each}}
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="w-100 feedback pb-5">
+
+            <div class="d-flex justify-content-center align-content-center flex-column text-center my-5">
+                <img src="images/icon-heart-dep.svg">
+                <h1 class="mt-4">depoimentos</h1> 
+
+                <div class="caixa_corte">
+                    <img src="images/icon-chat.svg">
+                </div>
+            </div>   
+
+
+
+            <div class="w-100">   
+
+        
+                <div class="slider center ajustar">     
+
+                    {{#each feedbacks}}    
+                        
+                        <div class="slide">
+                            
+                            <div class="tamanho bg-chats">
+                                {{#each images}}
+                                    <div class="imagem-depoimento" style="background-image: url({{cloudinaryUrl}});"></div>
+                                {{/each}}
+
+                                <div class="texto-depoimentos">
+                                    <div class="card-body col align-self-center">
+                                        <div class="aspas"></div>
+                                        <p class="card-text">{{content}}</p>
+                                    </div>
+                                    <small class="text-center">
+                                        {{name}}
+                                    </small>
+                                </div>
+        
+                            </div>
+
+
+                        </div>
+
+                    {{/each}}
+
+                    
+                </div>
+                            
+
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/slick-master/slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/carrossel.js"></script>    
+        
+
+    <!-- Footer -->
+    <footer class="w-100 d-flex justify-content-center align-items-center flex-column">
+                
+        <div class="mais w-100 d-flex justify-content-center align-items-center">
+
+            <ul class="w-75 d-flex justify-content-center align-items-center">
+                <li>
+
+                </li>                
+            </ul>
+
+        </div>
+       
+        <!-- Footer Elements -->
+        <div class="social-footer w-100  d-flex justify-content-center align-items-center flex-column">
+    
+            <!-- Social buttons -->
+            <ul class="d-flex align-items-center">
+                <li class="ml-1">
+                    <a class="social-network"><img src="images/instagram.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-tw mx-1"><img src="images/facebook.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-gplus mx-1"><img src="images/whatsapp.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-li mx-1"><img src="images/telegram.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-dribbble mx-1"><img src="images/behance.svg"></a>
+                </li>
+                <li class="ml-1">
+                    <a class="btn-floating btn-dribbble mx-1"><img src="images/linkedin.svg"></a>
+                </li>
+            </ul>
+            <!-- Social buttons -->        
+
+            <div class="text-center pt-2">
+                <a href="https://mdbootstrap.com/education/bootstrap/">Todos os direitos reservados</a>
+            </div>
+
+        </div>
+        
+        <!-- Footer Elements -->
+    
+    </footer>
+    <!-- Footer -->
+ 

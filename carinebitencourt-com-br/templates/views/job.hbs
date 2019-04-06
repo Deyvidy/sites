@@ -1,0 +1,107 @@
+<!--Todos inicio-->
+
+                <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+
+                    <% jobs.forEach( function(jobs) { %>                    
+
+                        <a href="#" class="thumbnail" data-toggle="modal" data-target="#<%=jobs.name%>">
+
+                            <% jobs.image.forEach( function(image){ %>
+                                <img class="my-3 mx-3 img-fluid"src="<%=image.url%>">
+                            <% }) %>
+
+                        </a>
+
+                    <% }) %>
+
+                </div> 
+
+            <!--Todos fim-->  
+
+            <!--Web inicio-->
+
+                <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+
+                    <% jobs.forEach( function( jobs ){ %>
+
+						<% if( jobs.tag == '5c5fadd34ecbe71c0404d64c' ) { %>
+                            <a href="#" class="thumbnail" data-toggle="modal" data-target="#<%=jobs.name%>"> 
+
+                                <% jobs.image.forEach( function( image ){  %>
+                                    <img class="my-3 mx-3"src="<%=image.url%>">
+                                <% }) %>
+
+                            </a>
+                        <% } %>
+
+                    <% }) %>                            
+
+                </div> 
+                
+            <!--Web fim-->
+
+            <!--impressos inicio-->
+               
+                <div class="tab-pane fade" id="impressos" role="tabpanel" aria-labelledby="impressos-tab">
+                    
+                    <% jobs.forEach( function( jobs ){ %>
+                    
+	                    <% if( jobs.tag == '5c60f45225703114f0caedfc' ) { %>
+		                    <a href="#" class="thumbnail" data-toggle="modal" data-target="#<%=jobs.name%>"> 
+	                    
+		                    <% jobs.image.forEach( function( image ){  %>
+			                    <img class="my-3 mx-3"src="<%=image.url%>">
+		                    <% }) %>
+	                    
+		                    </a>
+	                    <% } %>
+                    
+                    <% }) %>
+                    
+                </div>    
+                
+            <!--impressos fim-->            
+
+            <!--logotipo inicio-->
+
+                <div class="tab-pane fade" id="logotipo" role="tabpanel" aria-labelledby="logotipo-tab">
+
+                   <% jobs.forEach( function( jobs ){ %>
+                   
+	                   <% if( jobs.tag == '5c60f45e25703114f0caedfd' ) { %>
+		                   <a href="#" class="thumbnail" data-toggle="modal" data-target="#<%=jobs.name%>"> 
+                   
+			                   <% jobs.image.forEach( function( image ){  %>
+				                   <img class="my-3 mx-3"src="<%=image.url%>">
+			                   <% }) %>
+                   
+		                   </a>
+	                   <% } %>
+                   
+                   <% }) %>
+                   
+                </div>   
+                
+            <!--logotipo fim-->
+
+            <!--midia social inicio-->
+               
+                <div class="tab-pane fade" id="midiasSociais" role="tabpanel" aria-labelledby="midiasSociais-tab">
+
+                   <% jobs.forEach( function( jobs ){ %>
+                   
+	                   <% if( jobs.tag == '5c60f46b25703114f0caedfe' ) { %>
+		                   <a href="#" class="thumbnail" data-toggle="modal" data-target="#<%=jobs.name%>"> 
+		                   
+			                   <% jobs.image.forEach( function( image ){  %>
+				                   <img class="my-3 mx-3"src="<%=image.url%>">
+			                   <% }) %>
+		                   
+		                   </a>
+	                   <% } %>
+                   
+                   <% }) %>
+                   
+                </div>
+
+            <!--midia social fim-->

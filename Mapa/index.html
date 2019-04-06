@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>World</title>
+    </head>
+<body>
+    <style>
+        canvas {
+            border: solid 1px black;
+           
+        }
+    </style>
+
+    <div id="console">Console</div>
+    <div id="mycontainer" style="width: 100%; height: 80%"> <!-- set desired position and size to that div -->
+        <canvas id="star" style="width: 100%; height: 100%"></canvas>
+    </div>
+    <select id="star-color">
+        <option selected>Escolha um pais</option>
+        <option value='0'>Brasil</option>
+        <option value='1'>EUA</option>
+        <option value='2'>Argentina</option>
+        <option value='3'>Venezuela</option>
+        <option value='4'>Bolivia</option>
+    </select>
+
+    <input type="color" id="color">
+    <button id="btn" type="button">Captura provincia</button>
+    
+    <div id="rgb"></div>
+    <div id="country"></div>
+    <div id="id"></div>
+    <div id="pais"></div>
+
+    <script src="img-touch-canvas.js"></script>
+    <script src="pixel.js"></script> 
+
+</body>
+</html>

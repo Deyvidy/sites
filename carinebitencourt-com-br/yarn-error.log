@@ -1,0 +1,49 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js add ejs-locals
+
+PATH: 
+  /data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets
+
+Yarn version: 
+  1.14.0
+
+Node version: 
+  11.9.0
+
+Platform: 
+  android arm
+
+Trace: 
+  Error: EPERM: operation not permitted, symlink '../acorn/bin/acorn' -> '/storage/emulated/0/Project/carine/node_modules/acorn-jsx/node_modules/.bin/acorn'
+
+npm manifest: 
+  {
+    "name": "carine-bitencourt",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+      "keystone": "4.0.0-beta.5",
+      "lodash": "^4.13.1",
+      "moment": "2.17.1",
+      "cloudinary": "1.7.0",
+      "express-handlebars": "3.0.0",
+      "handlebars": "4.0.6",
+      "dotenv": "4.0.0",
+      "async": "2.1.4"
+    },
+    "devDependencies": {
+      "eslint": "3.15.0",
+      "eslint-config-keystone": "3.0.0",
+      "eslint-plugin-react": "^5.1.1"
+    },
+    "scripts": {
+      "lint": "eslint .",
+      "start": "node keystone.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
